@@ -14,34 +14,34 @@ c) la seccion de la izquierda es donde se muestran los atributos de los elemento
 //Preoblema 1
 
 func numerosSumados(numeroDeseado: Int, parejasNumeros: [Int]) -> Int {
-    // let numeroDeseado = 5;
+    // let numeroDeseado = 5
     // let parejasNumeros = [1 ,2 ,3 ,4]
     
-    var manerasTotal = 0;
+    var manerasTotal = 0
     var diccionarioNumeros: [Int: Int] = [:]
     
     for numero in parejasNumeros {
         
         if diccionarioNumeros[parejasNumeros[numero]] == nil {
-            diccionarioNumeros[parejasNumeros[numero]] = 1;
+            diccionarioNumeros[parejasNumeros[numero]] = 1
         } else {
-            let cuenta = diccionarioNumeros[parejasNumeros[numero]]!;
-            diccionarioNumeros[parejasNumeros[numero]] = cuenta  + 1;
+            let cuenta = diccionarioNumeros[parejasNumeros[numero]]!
+            diccionarioNumeros[parejasNumeros[numero]] = cuenta  + 1
         }
     }
     
     for indice in 0..<parejasNumeros.count {
-        let primerNumero = parejasNumeros[indice];
-        let segundoNumero = numeroDeseado - primerNumero;
+        let primerNumero = parejasNumeros[indice]
+        let segundoNumero = numeroDeseado - primerNumero
         
         if diccionarioNumeros[segundoNumero] != nil &&  diccionarioNumeros[segundoNumero]! > 0 {
-            diccionarioNumeros[primerNumero]! = diccionarioNumeros[primerNumero]! - 1;
-            diccionarioNumeros[segundoNumero]! = diccionarioNumeros[segundoNumero]! - 1;
+            diccionarioNumeros[primerNumero]! = diccionarioNumeros[primerNumero]! - 1
+            diccionarioNumeros[segundoNumero]! = diccionarioNumeros[segundoNumero]! - 1
             manerasTotal = manerasTotal + 1
         }
     }
     
-    return manerasTotal;
+    return manerasTotal
 }
 // print (numerosSumados(numeroDeseado: 5, parejasNumeros: [1, 2, 3, 4]))
 
@@ -82,6 +82,8 @@ enum Deportes {
     case Basket //(numeroJugadores: Int)
     case Tenis  //(enParejas: Bool)
 }
+
+
 //Problema 6
 
 
