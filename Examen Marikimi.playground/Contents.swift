@@ -43,7 +43,7 @@ func numerosSumados(numeroDeseado: Int, parejasNumeros: [Int]) -> Int {
     
     return manerasTotal;
 }
- // numerosSumados(numeroDeseado: 11, parejasNumeros: [3,5,8,9,2])
+// print (numerosSumados(numeroDeseado: 5, parejasNumeros: [1, 2, 3, 4]))
 
 //problema 3
 
@@ -59,17 +59,19 @@ for n in texto{
 resultado = "Son " + String(number) + " palabras"
 print (resultado)
 
-//if texto.contains(String(espacio)){
-
 
 
 //problema 4
 
-
-/*for c in miPrimerString {
-    aux = String(c) + aux
-}*/
-
+var primeraPalabra : String = ""
+for n in texto {
+    if (n != " "){
+        primeraPalabra += String(n)
+    }else{
+        break
+    }
+}
+print (primeraPalabra)
 
 
 //Problma 5
