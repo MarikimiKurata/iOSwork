@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var resultLabel: UILabel!
     
     @IBOutlet var listado: UILabel!
-    var lista : [String] = ["Maria", "Hector", "Kimi", "David", "Oscar",  "Diego", "Diego"]
+    var lista : [String] = ["Maria", "Hector", "Kimi", "David", "Oscars",  "Diego", "Diego"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
