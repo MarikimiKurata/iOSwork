@@ -45,32 +45,30 @@ func numerosSumados(numeroDeseado: Int, parejasNumeros: [Int]) -> Int {
 }
  // numerosSumados(numeroDeseado: 11, parejasNumeros: [3,5,8,9,2])
 
-//problema 2
+//problema 3
 
-var texto : String = "Hola mi nombre es Kimi"
+var texto : String = "Hola mi nombre es Kimi Kurata"
 
 var resultado = ""
-var number : Int = 0
+var number : Int = 1
 for n in texto{
     if (n == " "){
         number = number + 1
-        resultado = "Resultados encontrados: " + String(number)
-        print (resultado)
     }
 }
-
-
+resultado = "Son " + String(number) + " palabras"
+print (resultado)
 
 //if texto.contains(String(espacio)){
 
 
 
 //problema 4
-var primeraPalabra: String = "Hola esla primera palabra"
 
-if primeraPalabra.hasPrefix("Hola"){
-    print("Empieza con hola")
-}
+
+/*for c in miPrimerString {
+    aux = String(c) + aux
+}*/
 
 
 
